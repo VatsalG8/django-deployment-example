@@ -1,10 +1,10 @@
-from django.urls import path
+from django.conf.urls import url
 from  basic_app import views
 
 # SET THE NAMESPACE! (Template Tagging)
 app_name = 'basic_app'
 
 urlpatterns=[
-    path(r'relative/$',views.relative,name='relative'),
-    path(r'other/$',views.other,name='other'),
+    url(r'relative/$',views.relative,name='relative'),
+    url(r'other/$',views.other,name='other'),
 ]
